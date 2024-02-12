@@ -27,14 +27,14 @@ body {
   padding: 0;
 }
 
-body section p {
+body div p {
   font-family: "Noto Serif HK";
   font-size: 20px;
   color: lightgrey;
 }
 
 .songinfo {
-  background: (150, 150, 150, 0.5);
+  background: rgba(150, 150, 150, 0.5);
   border-radius: 20px;
   margin: 5px;
 }
@@ -150,10 +150,10 @@ article {
 
 /* adding opacity to show the love is fading away as the song progress */
 
-main section.chorus:nth-of-type(3) {
+main div.chorus:nth-of-type(3) {
   opacity: 0.6;
 }
 
-main section.chorus:nth-of-type(4) {
+main div.chorus:nth-of-type(4) {
   opacity: 0.2;
 }
