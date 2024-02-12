@@ -1,0 +1,159 @@
+/* solid color*/
+:root {
+  --cold-color: rgba(20, 31, 42, 1);
+  --fading-cold-color: rgba(20, 31, 42, 0);
+  --sad-color: #aad3ec; /*triadic */
+  --love-color: #ecaad3; /*triadic */
+  --forgive-color: #d3ecaa; /*triadic */
+  --wear-out-color: rgba(200, 200, 200, 1);
+  --worn-out-color: rgba(200, 200, 200, 0);
+  --scar-color: #3e2912; /*complement to depressed */
+  --depressed-color: #12273e; /*complement to scar */
+}
+
+html {
+  background-image: url(../images/fuji.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-color: #000000;
+}
+
+body {
+  font-family: "Roboto";
+  color: whitesmoke;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 0;
+  padding: 0;
+}
+
+body section p {
+  font-family: "Noto Serif HK";
+  font-size: 20px;
+  color: lightgrey;
+}
+
+.songinfo {
+  background: (150, 150, 150, 0.5);
+  border-radius: 20px;
+  margin: 5px;
+}
+
+.lyrics {
+  border-radius: 20px;
+  margin: auto;
+  width: 45%;
+  padding: 5px;
+  background: rgba(150, 150, 150, 0.5);
+}
+
+h1 {
+  margin: 0;
+}
+
+header div {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  margin: 0 20px;
+  padding: 0 20px;
+}
+
+.bgbox {
+  background-color: black;
+  opacity: 0.6;
+}
+
+.mv {
+  border-radius: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+article cite {
+  display: block;
+  text-align: right;
+}
+
+footer {
+  text-align: right;
+  padding: 0 20px 10px 0;
+}
+
+article {
+  background: rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.not {
+  text-decoration: line-through;
+}
+
+.cold {
+  color: var(--cold-color);
+}
+
+.sad {
+  color: var(--sad-color);
+}
+
+.depressed {
+  color: var(--depressed-color);
+}
+
+.forgive {
+  color: var(--forgive-color);
+}
+
+.love {
+  color: var(--love-color);
+}
+
+.scar {
+  color: var(--scar-color);
+}
+
+.dead {
+  color: black;
+}
+
+/* gradient change */
+.transparent {
+  background-clip: text;
+  color: transparent;
+}
+
+.wearout {
+  background-image: linear-gradient(
+    to right,
+    var(--wear-out-color),
+    var(--worn-out-color)
+  );
+}
+
+.fadingcold {
+  background-image: linear-gradient(
+    to right,
+    var(--cold-color),
+    var(--fading-cold-color)
+  );
+}
+
+.yestonotoyes {
+  background-image: linear-gradient(to right, white, white, transparent, white);
+}
+
+/* adding opacity to show the love is fading away as the song progress */
+
+main section.chorus:nth-of-type(3) {
+  opacity: 0.6;
+}
+
+main section.chorus:nth-of-type(4) {
+  opacity: 0.2;
+}
